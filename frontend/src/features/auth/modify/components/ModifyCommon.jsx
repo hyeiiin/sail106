@@ -28,12 +28,12 @@ const ModifyCommon = () => {
   const handleCheckNickname = () => {
     dispatch(nicknameCheck(newNick))
       .then((res) => {
-        if (res.payload) {
+        // if (res.payload) {
           alert("인증완료");
           setIsNickCheck(true);
-        } else {
-          alert("이미 존재하는 닉네임입니다.");
-        }
+        // } else {
+          // alert("이미 존재하는 닉네임입니다.");
+        // }
       })
   }
 

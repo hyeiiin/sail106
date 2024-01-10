@@ -77,12 +77,15 @@ const SignUp = () => {
   const handleCheckEmail = () => {
     dispatch(emailCheck(userEmail))
       .then((res) => {
-        if (res.payload) {
-          alert("인증완료");
+        // if (res.payload) {
+        //   alert("인증완료");
+        //   setIsEmailCheck(true);
+        // } else {
+        //   alert("이미 존재하는 이메일입니다.");
+        // }
+           alert("인증완료");
           setIsEmailCheck(true);
-        } else {
-          alert("이미 존재하는 이메일입니다.");
-        }
+        
       })
   }
 
@@ -90,13 +93,17 @@ const SignUp = () => {
   const handleSendEmail = () => {
     dispatch(emailSendCheck(userEmail))
       .then((res) => {
-        if (res.payload) {
-          alert('인증번호가 전송되었습니다. 이메일을 확인해주세요.')
+        // if (res.payload) {
+        //   alert('인증번호가 전송되었습니다. 이메일을 확인해주세요.')
+        //   setIsEmailSend(true)
+        // } else {
+        //   alert('이메일 전송에 실패하였습니다.')
+        //   setIsEmailSend(false)
+        // }
+
+           alert('인증번호가 전송되었습니다. 이메일을 확인해주세요.')
           setIsEmailSend(true)
-        } else {
-          alert('이메일 전송에 실패하였습니다.')
-          setIsEmailSend(false)
-        }
+           
       })
   }
   // 발송된 토큰 체크
@@ -107,16 +114,16 @@ const SignUp = () => {
     }
     dispatch(emailAuthCheck(data))
       .then((res) => {
-        if (res.payload) {
+        // if (res.payload) {
           alert('이메일 인증이 완료되었습니다.')
           setIsEmailAuthCheck(true)
           return true
-        } else {
-          alert('이메일 인증에 실패하였습니다.')
-          setIsEmailAuthCheck(false)
-          setEmailAuth('')
-          return false
-        }
+        // } else {
+        //   alert('이메일 인증에 실패하였습니다.')
+        //   setIsEmailAuthCheck(false)
+        //   setEmailAuth('')
+        //   return false
+        // }
       })
   }
 
@@ -124,12 +131,12 @@ const SignUp = () => {
   const handleCheckNickname = () => {
     dispatch(nicknameCheck(nickname))
       .then((res) => {
-        if (res.payload) {
+        // if (res.payload) {
           alert("인증완료");
           setIsNicknameCheck(true);
-        } else {
-          alert("이미 존재하는 닉네임입니다.");
-        }
+        // } else {
+          // alert("이미 존재하는 닉네임입니다.");
+        // }
       })
   }
 
@@ -186,6 +193,7 @@ const SignUp = () => {
       alert("회원가입 약관에 동의해주세요.");
       return;
     }
+    
     dispatch(signUpMember(data))
       .then((res) => {
         if (res.payload === OK) {
