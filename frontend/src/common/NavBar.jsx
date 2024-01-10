@@ -79,6 +79,12 @@ const NavBar = () => {
                 >
                   <Link to="signup">회원가입</Link> 
                 </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{ display: { xs: "none", sm: "block" } }}
+                >
+                  <Link to="test">ai 테스트</Link> 
+                </Typography>
               </Navs>
               :
               <Navs onClick={() => { window.scrollTo(0, 0); }}>

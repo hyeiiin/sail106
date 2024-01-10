@@ -18,6 +18,7 @@ import ModifyProfile from 'features/auth/modify/ModifyProfile'
 import ConsultantResPage from 'features/consulting/reservation/ConsultantResPage'
 import Login from 'features/auth/login/Login'
 import SignUp from 'features/auth/signup/SignUp'
+import Test from 'features/auth/signup/Test'
 import SearchPassword from 'features/auth/login/SearchPassword'
 import ConsultantList from 'features/consulting/consultantList/ConsultantList'
 import Footer from 'common/Footer'
@@ -51,10 +52,13 @@ const App = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/searchpassword' element={<SearchPassword />} />
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/test' element={<Test />} />
+
           </Route>
           {/* not-nav */}
           <Route path='/consult' element={<Consult />} />
           <Route path='/self' element={<Self />} />
+
         </Routes>
         <CustomizedSnackbars />
         <Footer />
