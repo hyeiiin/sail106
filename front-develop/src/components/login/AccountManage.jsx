@@ -15,14 +15,14 @@ const ATag = styled.a`
   color: #5d5253;
 `;
 
-const AccountManage = (props) => {
+const AccountManage = props => {
   return (
     <Account>
       {props.children}
       <ATag href="#">비밀번호 찾기</ATag>
       <ATag href="#">회원가입</ATag>
     </Account>
-  )
-}
+  );
+};
 
 export default AccountManage;
