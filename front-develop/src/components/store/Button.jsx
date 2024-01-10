@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button = styled.button`
+const ButtonBox = styled.button`
   border: 1px solid #E66F75;
   background-color: #E66F75;
   border-radius: 6px;
@@ -17,10 +17,10 @@ const Button = styled.button`
   }
 `;
 
-const LoginButton = () => {
+const Button = () => {
   return (
-    <Button>로그인</Button>
+    <ButtonBox>로그인</ButtonBox>
   )
 }
 
-export default LoginButton;
+export default Button;

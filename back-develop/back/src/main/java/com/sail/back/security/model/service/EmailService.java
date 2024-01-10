@@ -51,7 +51,7 @@ public class EmailService {
             MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
             messageHelper.setFrom(emailConfig.getUserName());
             messageHelper.setTo(email);
-            messageHelper.setSubject("[면상] 임시 비밀번호 안내 입니다.");
+            messageHelper.setSubject("[FLOWERING] 임시 비밀번호 안내 입니다.");
             messageHelper.setText(makeTempPasswordTemplate(tempPassword),true);
 
             mailSender.send(message);
@@ -83,7 +83,7 @@ public class EmailService {
             MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
             messageHelper.setFrom(emailConfig.getUserName());
             messageHelper.setTo(email);
-            messageHelper.setSubject("[에그로그] 이메일 인증 번호입니다.");
+            messageHelper.setSubject("[FLOWERING] 이메일 인증 번호입니다.");
             messageHelper.setText(makeCodeTemplate(number),true);
 
             mailSender.send(message);
@@ -108,7 +108,7 @@ public class EmailService {
 
     private String makeCodeTemplate(String code){
         String mainColor = "#F28482";
-        String title = "EMAIL_SERVICE";
+        String title = "FLOWERING_EMAIL_SERVICE";
         String template =
                 "<div style=\"font-family: 'Apple SD Gothic Neo', 'sans-serif' !important; width: 540px; height: 600px; border-top: 4px solid "+mainColor+"; margin: 100px auto; padding: 30px 0; box-sizing: border-box;\">"+
                         "\t<h1 style=\"margin: 0; padding: 0 5px; font-size: 28px; font-weight: 400;\">"+
@@ -136,7 +136,7 @@ public class EmailService {
 
     private String makeTempPasswordTemplate(String tempPassword){
         String mainColor = "#F28482";
-        String title = "EMAIL_SERVICE";
+        String title = "FLOWERING_EMAIL_SERVICE";
         String template =
                 "<div style=\"font-family: 'Apple SD Gothic Neo', 'sans-serif' !important; width: 540px; height: 600px; border-top: 4px solid "+mainColor+"; margin: 100px auto; padding: 30px 0; box-sizing: border-box;\">"+
                         "\t<h1 style=\"margin: 0; padding: 0 5px; font-size: 28px; font-weight: 400;\">"+
