@@ -14,9 +14,12 @@ public class FindRequest {
     private boolean name;
     private boolean provider;
     private boolean password;
-    private boolean position;
-    private boolean create_at;
+    private boolean createAt;
     private boolean role;
     private boolean status;
-
+    private boolean profileImgUrl;
+    private boolean userGender;
+    private boolean birthdateYear;
+    private boolean birthdateMonth;
+    private boolean birthdateDay;
 }

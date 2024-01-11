@@ -1,0 +1,153 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"05650100-1b7a-496a-86f8-114d640fe445\" name=\"Changes\" comment=\"#1 feat: 삭제, 수정\">\r\n      <change afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserIdRequest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserInfoRequest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserUpdateRequest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$/back\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$/back\">\r\n          <activation />\r\n        </task>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"feat/#1-security\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;unistuj&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"84dc4424-0a30-4a84-8a10-0112c35120f2\" />\r\n        <option name=\"url\" value=\"https://github.com/sail106/back.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2afW3vW5YUnPoHtMoQKlccJM4Xf\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Gradle.Build back.executor\": \"Run\",\r\n    \"Gradle.D:/SSAFY/rail106/back/back/build.gradle.executor\": \"Run\",\r\n    \"Gradle.back [dependencies].executor\": \"Run\",\r\n    \"Gradle.back.executor\": \"Run\",\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"Spring Boot.BackApplication.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"feat/#1-user\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"D:/SSAFY/rail106/back/back/src/main/java/com/sail/back/user\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"reference.projectsettings.compiler.javacompiler\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\\java\\com\\sail\\back\\user\" />\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\" />\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\\java\\com\\sail\\back\\user\\model\\dto\\request\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\\java\\com\\sail\\back\\user\\model\\dto\\response\" />\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\\java\\com\\sail\\back\\user\\controller\" />\r\n      <recent name=\"D:\\SSAFY\\rail106\\back\\back\\src\\main\\java\\com\\sail\\back\\user\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Gradle.back\">\r\n    <configuration name=\"back [dependencies]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/back\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\"dependencies\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <RunAsTest>false</RunAsTest>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"back\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$/back\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list />\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <RunAsTest>false</RunAsTest>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"BackApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <option name=\"FRAME_DEACTIVATION_UPDATE_POLICY\" value=\"UpdateClassesAndResources\" />\r\n      <module name=\"back.back.main\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.sail.back.BackApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Gradle.back\" />\r\n        <item itemvalue=\"Gradle.back [dependencies]\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-azul-17.0.9-f644763e9732-52037d96\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"05650100-1b7a-496a-86f8-114d640fe445\" name=\"Changes\" comment=\"\" />\r\n      <created>1704709917961</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1704709917961</updated>\r\n      <workItem from=\"1704709918833\" duration=\"123000\" />\r\n      <workItem from=\"1704808785366\" duration=\"257000\" />\r\n      <workItem from=\"1704809050155\" duration=\"318000\" />\r\n      <workItem from=\"1704809370048\" duration=\"66000\" />\r\n      <workItem from=\"1704809443539\" duration=\"207000\" />\r\n      <workItem from=\"1704809657410\" duration=\"48000\" />\r\n      <workItem from=\"1704809712864\" duration=\"67000\" />\r\n      <workItem from=\"1704809789411\" duration=\"37000\" />\r\n      <workItem from=\"1704809835277\" duration=\"2642000\" />\r\n      <workItem from=\"1704883084825\" duration=\"3312000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"#1 feat: 회원가입re\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704812145968</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704812145968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"#1 feat: 삭제, 수정\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704885310490</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704885310490</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"Branch\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"origin/feat/#1-security\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"User\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"*\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"feat/#1-user\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"#1 feat: 회원가입re\" />\r\n    <MESSAGE value=\"#1 feat: 삭제, 수정\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"#1 feat: 삭제, 수정\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f1dabc532c3c7c7f037c1be76b899f729e09f638)
++++ b/.idea/workspace.xml	(date 1704886832683)
+@@ -5,12 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="05650100-1b7a-496a-86f8-114d640fe445" name="Changes" comment="#1 feat: 삭제, 수정">
+-      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserIdRequest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserInfoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserUpdateRequest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,7 +27,17 @@
+         </task>
+         <projects_view>
+           <tree_state>
+-            <expand />
++            <expand>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="back" type="f1a62948:ProjectNode" />
++              </path>
++              <path>
++                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
++                <item name="back" type="f1a62948:ProjectNode" />
++                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
++              </path>
++            </expand>
+             <select />
+           </tree_state>
+         </projects_view>
+@@ -76,32 +83,33 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Gradle.Build back.executor": "Run",
+-    "Gradle.D:/SSAFY/rail106/back/back/build.gradle.executor": "Run",
+-    "Gradle.back [dependencies].executor": "Run",
+-    "Gradle.back.executor": "Run",
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "Spring Boot.BackApplication.executor": "Run",
+-    "git-widget-placeholder": "feat/#1-user",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "D:/SSAFY/rail106/back/back/src/main/java/com/sail/back/user",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Gradle.BackApplicationTests.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.Build back.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.D:/SSAFY/rail106/back/back/build.gradle.executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.back [dependencies].executor&quot;: &quot;Run&quot;,
++    &quot;Gradle.back.executor&quot;: &quot;Run&quot;,
++    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
++    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
++    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
++    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;Spring Boot.BackApplication.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;feat/#1-user&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;D:/SSAFY/rail106/back/back/src/main/java/com/sail/back/user&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="D:\SSAFY\rail106\back\back\src\main\java\com\sail\back\user" />
+@@ -115,6 +123,30 @@
+     </key>
+   </component>
+   <component name="RunManager" selected="Gradle.back">
++    <configuration name="BackApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++      <ExternalSystemSettings>
++        <option name="executionName" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$/back" />
++        <option name="externalSystemIdString" value="GRADLE" />
++        <option name="scriptParameters" value="" />
++        <option name="taskDescriptions">
++          <list />
++        </option>
++        <option name="taskNames">
++          <list>
++            <option value=":test" />
++            <option value="--tests" />
++            <option value="&quot;com.sail.back.BackApplicationTests&quot;" />
++          </list>
++        </option>
++        <option name="vmOptions" />
++      </ExternalSystemSettings>
++      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
++      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
++      <DebugAllEnabled>false</DebugAllEnabled>
++      <RunAsTest>true</RunAsTest>
++      <method v="2" />
++    </configuration>
+     <configuration name="back [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+@@ -168,6 +200,7 @@
+     <recent_temporary>
+       <list>
+         <item itemvalue="Gradle.back" />
++        <item itemvalue="Gradle.BackApplicationTests" />
+         <item itemvalue="Gradle.back [dependencies]" />
+       </list>
+     </recent_temporary>
+@@ -196,7 +229,8 @@
+       <workItem from="1704809712864" duration="67000" />
+       <workItem from="1704809789411" duration="37000" />
+       <workItem from="1704809835277" duration="2642000" />
+-      <workItem from="1704883084825" duration="3312000" />
++      <workItem from="1704883084825" duration="3546000" />
++      <workItem from="1704886708392" duration="125000" />
+     </task>
+     <task id="LOCAL-00001" summary="#1 feat: 회원가입re">
+       <option name="closed" value="true" />
