@@ -19,6 +19,6 @@ function App() {
       <SignupForm />
     </Card>
   );
-};
+}
 
 export default App
