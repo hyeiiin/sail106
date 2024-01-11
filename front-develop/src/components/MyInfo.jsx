@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button, { ButtonBox } from "./store/Button";
 
 const InfoDiv = styled.div`
   margin: 80px;
@@ -34,21 +35,10 @@ const RightDiv = styled.div`
   flex : 3;
 `
 
-const Button = styled.button`
-  border: 1px solid #E66F75;
-  background-color: #E66F75;
-  border-radius: 30px;
+const MyButton = styled(ButtonBox)`
   width: 70%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 50px;
-  color: white;
-  font-size: medium;
-  font-weight: bold;
-  &:hover {
-    background-color: #c94d53;
-    cursor: pointer;
-  }
+  border-radius: 30px;
+
 `;
 
 const MyInfo = () => {
@@ -59,15 +49,17 @@ const MyInfo = () => {
       <LeftDiv>
         <p>NAME</p>
         <p>EMAIL</p>
-        <p>AGE</p>
+        <p>NICKNAME</p>
+        <p>Birthday</p>
       </LeftDiv>
       <RightDiv>
       <p>Kim Ssa Fy</p>
       <p>Email@google.com</p>
-      <p>25</p>
+      <p>김싸피</p>
+      <p>YYYY-MM-DD</p>
       </RightDiv>
       </ProfileDiv>
-      <Button>내 정보 수정하기</Button>
+      <MyButton>내 정보 수정하기</MyButton>
     </InfoDiv>
   );
 };
