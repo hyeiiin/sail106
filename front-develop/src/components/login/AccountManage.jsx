@@ -12,7 +12,7 @@ const ATag = styled.a`
   margin-left: 15px;
   margin-right: 15px;
   font-weight: bold;
-  color: #5d5253;
+  color: #667085;
 `;
 
 const AccountManage = props => {

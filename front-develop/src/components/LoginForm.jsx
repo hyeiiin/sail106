@@ -13,8 +13,8 @@ const LoginForm = () => {
     <>
       <LoginHeader />
       <form action="#">
-        <Input htmlFor="loginEmail" type="email" id="loginEmail" placeholder="이메일 입력" />
-        <Input htmlFor="loginPw" type="password" id="loginPw" placeholder="비밀번호 입력" />
+        <Input htmlFor="loginEmail" type="email" id="loginEmail" placeholder="이메일 입력" width="500px" />
+        <Input htmlFor="loginPw" type="password" id="loginPw" placeholder="비밀번호 입력" width="500px" />
         <Button>로그인</Button>
       </form>
       <AccountManage />

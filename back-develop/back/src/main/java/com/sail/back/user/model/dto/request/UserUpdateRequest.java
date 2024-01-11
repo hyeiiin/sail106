@@ -9,22 +9,19 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.LocalDateTime;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Slf4j
 @Getter
-public class UserInfoRequest {
+public class UserUpdateRequest {
+    private Long id;
     private String email;
     private String department;
-    private String password;
     private String name;
     private AuthProvider provider;
-    private String position;
-    private LocalDateTime create_at;
+    private String password;
     private UserRole role;
     private UserStatus status;
-
+    private String profileImgUrl;
 }
