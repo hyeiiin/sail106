@@ -167,6 +167,7 @@ const SelfTestRoom = () => {
     return createSession(mySessionId).then((sessionId) => createToken(sessionId));
   }
 
+  
 // Node.js에서 window.btoa() 대체
   function base64Encode(str) {
   // 문자열을 Buffer로 변환
@@ -180,6 +181,7 @@ const SelfTestRoom = () => {
 
   const createSession = (sessionId) => {
 
+
     return new Promise((resolve, reject) => {
       const data = JSON.stringify({ customSessionId: sessionId });
       axios
@@ -188,6 +190,7 @@ const SelfTestRoom = () => {
             Authorization: 'Basic ' +  
             // Window.atob ('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
             Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET,POST',
@@ -222,6 +225,7 @@ const SelfTestRoom = () => {
         });
     });
   }
+
 
   const createToken = (sessionId) => {
     return new Promise((resolve, reject) => {
