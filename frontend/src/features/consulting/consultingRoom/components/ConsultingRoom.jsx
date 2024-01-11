@@ -26,8 +26,8 @@ import SelectedColorSet from 'common/colorset/SelectedColorSet';
 import ConSelectedColorSet from 'common/colorset/ConSelectedColorSet';
 import ColorButtonGroup from 'common/colorset/ColorButtonGroup'
 
-const OPENVIDU_SERVER_URL = 'https://localhost:8443';
-const OPENVIDU_SERVER_SECRET = '[오픈비두시크릿]';
+const OPENVIDU_SERVER_URL = 'https://localhost:4443';
+const OPENVIDU_SERVER_SECRET = 'OPENVIDU_SECRET';
 
 
 
@@ -257,6 +257,7 @@ const ConsultingRoom = () => {
             'Access-Control-Allow-Methods': 'GET,POST',
           },
         })
+        
         .then((response) => {
           resolve(response.data.id);
         })

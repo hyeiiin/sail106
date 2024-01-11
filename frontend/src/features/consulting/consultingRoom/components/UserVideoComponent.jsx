@@ -7,12 +7,12 @@ import { CUSTOMER, CONSULTANT } from 'api/CustomConst'
 import CoverFilter from './CoverFilter'
 
 const UserVideoComponent = ({ streamManager }) => {
+
   const subRole = JSON.parse(streamManager.stream.connection.data).clientRole;
 
   const getNicknameTag = () => {
     return JSON.parse(streamManager.stream.connection.data).clientData;
   }
-
 
   return (
     <div>

@@ -9,7 +9,7 @@ export const getToken = () => {
     if (date > new Date(window.localStorage.getItem(expireToken))) {
       // window.location.href = 'http://localhost:3000/' + "login"
       // deleteToken()
-      window.location.href = "https://localhost:8080/login"
+      window.location.href = "http://localhost:8080/login"
       return false
     } else {
       return window.localStorage.getItem(tokenName);

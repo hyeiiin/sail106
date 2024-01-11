@@ -50,9 +50,12 @@ export const signUpMember = createAsyncThunk(
   async (userInfo, { rejectWithValue }) => {
     try {
       let response
-
+      console.log("sssssssssssssssssssssssss"+userInfo)
+      
       if (userInfo.role === CUSTOMER) {
         response = await Axios.post('customers', userInfo);
+      console.log("customerrrr")
+
       } else if (userInfo.role === CONSULTANT) {
         response = await Axios.post('consultants', userInfo);
       }

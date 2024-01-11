@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as tmImage from '@teachablemachine/image';
 
 const Test = () => {
+  const webcamContainerRef = useRef(null);
+  const labelContainerRef = useRef(null);
   let model, webcam, labelContainer, maxPredictions;
 
   useEffect(() => {
@@ -19,8 +21,8 @@ const Test = () => {
       await webcam.play();
       window.requestAnimationFrame(loop);
 
-      document.getElementById('webcam-container').appendChild(webcam.canvas);
-      labelContainer = document.getElementById('label-container');
+      webcamContainerRef.current.appendChild(webcam.canvas);
+      labelContainer = labelContainerRef.current;
       for (let i = 0; i < maxPredictions; i++) {
         labelContainer.appendChild(document.createElement('div'));
       }
@@ -49,13 +51,13 @@ const Test = () => {
   }, []);
 
   return (
-    <div>
-      <button type="button" onClick={init}>
+    <>
+      <button type="button" onClick={() => {}}>
         Start
       </button>
-      <div id="webcam-container"></div>
-      <div id="label-container"></div>
-    </div>
+      <div ref={webcamContainerRef}></div>
+      <div ref={labelContainerRef}></div>
+    </>
   );
 };
 
