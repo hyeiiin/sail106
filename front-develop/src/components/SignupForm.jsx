@@ -1,4 +1,5 @@
 import SignupHeader from "./signup/SignupHeader"
+<<<<<<< HEAD
 import Input from "./store/Input"
 import Button from "./store/Button"
 import EmailContainer from "./signup/EmailContainer"
@@ -16,6 +17,12 @@ const SignupForm = () => {
       <p>인증번호가 오지 않아요.</p>
       <Button>다음</Button>
     </>
+=======
+
+const SignupForm = () => {
+  return (
+    <SignupHeader />
+>>>>>>> ecf721ec8be3afb8901edecd501dd04cdb6de13a
   )
 }
 

@@ -1,4 +1,8 @@
 import styled, {keyframes} from "styled-components";
+<<<<<<< HEAD
+=======
+import ClipLoader from "react-spinners/ClipLoader"; //설치한 cliploader을 import한다
+>>>>>>> ecf721ec8be3afb8901edecd501dd04cdb6de13a
 
 const SpinnerOverlay = styled.div`
   position: fixed;

@@ -1,5 +1,6 @@
 package com.sail.back.user.model.service;
 
+<<<<<<< HEAD
 import com.sail.back.user.model.dto.request.UserIdRequest;
 import com.sail.back.user.model.dto.request.UserRegistRequest;
 import com.sail.back.user.model.dto.request.UserUpdateRequest;
@@ -26,10 +27,29 @@ public class UserServiceImpl implements UserService{
     @Override
     public User registUser(UserRegistRequest userRegistRequest){
         User user = User.builder().email(userRegistRequest.getEmail()).password(passwordEncoder.encode(userRegistRequest.getPassword())).build();
+=======
+import com.sail.back.user.model.dto.request.UserInfoRequest;
+import com.sail.back.user.model.dto.request.UserJoinRequest;
+import com.sail.back.user.model.entity.User;
+import com.sail.back.user.model.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("userService")
+public class UserServiceImpl implements UserService{
+
+    @Autowired
+    UserRepository userRepository;
+
+    @Override
+    public User joinUser(UserJoinRequest userJoinRequest){
+        User user = User.builder().email(userJoinRequest.getEmail()).password(userJoinRequest.getPassword()).build();
+>>>>>>> ecf721ec8be3afb8901edecd501dd04cdb6de13a
         return userRepository.save(user);
     }
 
     @Override
+<<<<<<< HEAD
     public User infoUser(UserIdRequest userIdRequest) {
 
         User user = userRepository.findById(userIdRequest.getId()).get();
@@ -50,6 +70,11 @@ public class UserServiceImpl implements UserService{
             return user;
         }
         return originalUser;
+=======
+    public User infoUser(UserInfoRequest userInfoRequest) {
+        User user = User.builder().email(userInfoRequest.getEmail()).password(userInfoRequest.getPassword()).build();
+        return userRepository.save(user);
+>>>>>>> ecf721ec8be3afb8901edecd501dd04cdb6de13a
     }
 
 }
