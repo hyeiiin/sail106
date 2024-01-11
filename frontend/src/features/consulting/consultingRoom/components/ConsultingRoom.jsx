@@ -29,8 +29,6 @@ import ColorButtonGroup from 'common/colorset/ColorButtonGroup'
 const OPENVIDU_SERVER_URL = 'https://localhost:4443';
 const OPENVIDU_SERVER_SECRET = 'OPENVIDU_SECRET';
 
-
-
 // rafce Arrow function style 
 const ConsultingRoom = () => {
   const { nickname, email, role } = useSelector(state => state.auth.logonUser)
@@ -53,10 +51,12 @@ const ConsultingRoom = () => {
 
   const [isMic, setIsMic] = useState(true)
   const [isCam, setIsCam] = useState(true)
+
   // 코멘트, 진단결과 톤, 진단결과 이미지 정보
   const { selectedColor, bestColor, worstColor,
     consultingComment, tone, files
   } = useSelector(state => state.colorSetList)
+
 
   const consultingFinishRequest = {
     reservationId: reservationId,
@@ -66,14 +66,15 @@ const ConsultingRoom = () => {
     worstColorSet: worstColor
   }
 
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   useEffect(() => {
+    // alert('dsfsfsfsd')
     window.addEventListener(
       'beforeunload',
       onbeforeunload);
+
     return () => {
       window.removeEventListener(
         'beforeunload',
@@ -83,6 +84,7 @@ const ConsultingRoom = () => {
 
   useEffect(() => {
     if (role === CUSTOMER) {
+      alert('consultantSessionName'+consultantSessionName)
       if (!consultantSessionName) {
         alert('요청된 세션이 없거나 공란입니다. 종료 후 정상접근 바랍니다.')
       }
@@ -94,6 +96,7 @@ const ConsultingRoom = () => {
 
 
   useEffect(() => {
+    alert('session'+session)
     if (session) {
       session.on('streamCreated', streamCreated)
       session.on('streamDestroyed', streamDestroyed)
@@ -101,6 +104,7 @@ const ConsultingRoom = () => {
       session.on('signal:colorset', shareColorset)
       getToken().then(sessionConnect);
     }
+
   }, [session])
 
   const sessionConnect = (token) => {
@@ -257,7 +261,7 @@ const ConsultingRoom = () => {
             'Access-Control-Allow-Methods': 'GET,POST',
           },
         })
-        
+
         .then((response) => {
           resolve(response.data.id);
         })

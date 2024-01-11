@@ -21,6 +21,7 @@ const initialState = {
 // actions ==============================
 // customer ==============================
 // 내 진단기록 FETCH (get)
+
 export const myConsultantDxFetch = createAsyncThunk(
   'mypage/myConsultantDxFetch',
   async () => {

@@ -99,6 +99,7 @@ export const consultSlice = createSlice({
     },
   }
 })
+
 export const { settingModalOn, settingModalOff, setSession, setCustomer,
   resetSessionName, appendMessageList, setReservationId, resetMsg } = consultSlice.actions;
 
