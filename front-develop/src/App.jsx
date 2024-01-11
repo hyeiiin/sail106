@@ -19,6 +19,10 @@ function App() {
       <SignupForm />
     </Card>
   );
+<<<<<<< HEAD
 }
+=======
+};
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
 
 export default App

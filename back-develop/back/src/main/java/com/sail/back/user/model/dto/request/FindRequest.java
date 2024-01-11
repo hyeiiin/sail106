@@ -14,6 +14,7 @@ public class FindRequest {
     private boolean name;
     private boolean provider;
     private boolean password;
+<<<<<<< HEAD
     private boolean createAt;
     private boolean role;
     private boolean status;
@@ -22,4 +23,11 @@ public class FindRequest {
     private boolean birthdateYear;
     private boolean birthdateMonth;
     private boolean birthdateDay;
+=======
+    private boolean position;
+    private boolean create_at;
+    private boolean role;
+    private boolean status;
+
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
 }
