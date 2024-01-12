@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa957212-d6f4-4719-8576-688cde847e08" name="Changes" comment="" />
+    <list default="true" id="fa957212-d6f4-4719-8576-688cde847e08" name="Changes" comment="feat : 삭제된 파일들">
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/modules/back.back.main~1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/modules/back.back.main~1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/modules/back.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/modules/back.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_42_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_42_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_42__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_43_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_43_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024-01-10_PM_8_43__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/BackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/BackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/config/GlobalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/config/GlobalConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/utils/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/global/utils/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/exception/AuthErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/exception/AuthErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/exception/AuthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/exception/AuthException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/filter/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/filter/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/handler/OauthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/handler/OauthSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/model/dto/params/TempParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/model/dto/params/TempParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/model/dto/response/TempResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/security/model/dto/response/TempResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/user/model/entity/enums/AuthProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/main/java/com/sail/back/user/model/entity/enums/AuthProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-develop/back/src/test/java/com/sail/back/BackApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-develop/back/src/test/java/com/sail/back/BackApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2aqYQaZ8Q4DYV2cp8qwcofPzLmr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -25,6 +69,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/SSAFY/temp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -38,10 +86,69 @@
       <option name="presentableId" value="Default" />
       <updated>1705047560452</updated>
       <workItem from="1705047561826" duration="6000" />
+      <workItem from="1705047645786" duration="485000" />
     </task>
+    <task id="LOCAL-00001" summary="feat : user api 개발">
+      <option name="closed" value="true" />
+      <created>1705047914473</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705047914473</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat : redis 설정">
+      <option name="closed" value="true" />
+      <created>1705047944849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705047944849</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat : email api 개발">
+      <option name="closed" value="true" />
+      <created>1705047981055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705047981055</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat : email api 수정">
+      <option name="closed" value="true" />
+      <created>1705048065982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705048065982</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat : user api 수정">
+      <option name="closed" value="true" />
+      <created>1705048077628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705048077628</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat : 삭제된 파일들">
+      <option name="closed" value="true" />
+      <created>1705048111837</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705048111837</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat : user api 개발" />
+    <MESSAGE value="feat : redis 설정" />
+    <MESSAGE value="feat : email api 개발" />
+    <MESSAGE value="feat : email api 수정" />
+    <MESSAGE value="feat : user api 수정" />
+    <MESSAGE value="feat : 삭제된 파일들" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 삭제된 파일들" />
   </component>
 </project>

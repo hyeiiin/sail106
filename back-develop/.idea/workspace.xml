@@ -4,10 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05650100-1b7a-496a-86f8-114d640fe445" name="Changes" comment="#1 feat: 삭제, 수정">
+    <list default="true" id="05650100-1b7a-496a-86f8-114d640fe445" name="Changes" comment="#1 refactor: MessageUtils, passwordEncode">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/dto/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/dto/request/RefreshRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/dto/response/GeneratedToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/entity/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/entity/UnsafeToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/repository/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/repository/UnsafeTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/model/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/exception/UserErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/exception/UserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/back/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/global/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/global/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/exception/JwtException.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/exception/JwtException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/filter/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/filter/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/security/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/FindRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserIdRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserRegistRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserRegistRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/request/UserUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/response/UserInfoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/response/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/dto/response/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/com/sail/back/user/model/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +67,19 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/#1-security" />
+        <entry key="$PROJECT_DIR$" value="feat/#1-user" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,6 +129,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BackApplication.executor": "Run",
     "git-widget-placeholder": "feat/#1-user",
     "ignore.virus.scanning.warn.message": "true",
@@ -107,6 +145,11 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -263,6 +306,8 @@
       <workItem from="1704809835277" duration="2642000" />
       <workItem from="1704883084825" duration="3546000" />
       <workItem from="1704886708392" duration="2540000" />
+      <workItem from="1704962277758" duration="460000" />
+      <workItem from="1705020127740" duration="17917000" />
     </task>
     <task id="LOCAL-00001" summary="#1 feat: 회원가입re">
       <option name="closed" value="true" />
@@ -280,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704885310490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#1 refactor: MessageUtils, passwordEncode">
+      <option name="closed" value="true" />
+      <created>1704962481791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704962481791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +391,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#1 feat: 회원가입re" />
     <MESSAGE value="#1 feat: 삭제, 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="#1 feat: 삭제, 수정" />
+    <MESSAGE value="#1 refactor: MessageUtils, passwordEncode" />
+    <option name="LAST_COMMIT_MESSAGE" value="#1 refactor: MessageUtils, passwordEncode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
