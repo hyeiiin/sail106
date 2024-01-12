@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/back" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="azul-17" project-jdk-type="JavaSDK">
+<<<<<<< HEAD
+=======
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="azul-17" project-jdk-type="JavaSDK">
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

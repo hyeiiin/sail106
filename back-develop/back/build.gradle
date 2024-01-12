@@ -35,7 +35,15 @@ dependencies {
 	implementation 'io.springfox:springfox-swagger-ui:3.0.0'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+<<<<<<< HEAD
 //   developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+=======
+<<<<<<< HEAD
+//   developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+=======
+//	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

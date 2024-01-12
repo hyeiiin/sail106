@@ -1,5 +1,13 @@
 import styled from "styled-components";
+<<<<<<< HEAD
 import { ButtonBox} from "./store/Button";
+=======
+<<<<<<< HEAD
+import { ButtonBox} from "./store/Button";
+=======
+
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
 const OuterDiv = styled.div`
   padding-top: 80px;
   padding-left: 40px;
@@ -8,6 +16,10 @@ const OuterDiv = styled.div`
 
 const Input = styled.input`
   border: 1px solid gray;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
   border-radius: 8px;
   width: 80%;
   padding-top: 15px;
@@ -28,6 +40,28 @@ const Button = styled.button`
   width : 50%;
   padding-top: 13px;
   padding-bottom: 13px;
+<<<<<<< HEAD
+=======
+=======
+  border-radius: 6px;
+  width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-top : 10px;
+  margin-bottom: 10px;
+`;
+
+const Button = styled.button`
+  border: 1px solid #E66F75;
+  background-color: #E66F75;
+  border-radius: 6px;
+  width: 520px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
   color: white;
   font-size: medium;
   font-weight: bold;
@@ -37,6 +71,10 @@ const Button = styled.button`
   }
 `;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
 const ProfileDiv = styled.div`
   display: flex;
   align-items: center;
@@ -90,3 +128,38 @@ const PasswordFindForm = () => {
 
 export default PasswordFindForm;
 
+<<<<<<< HEAD
+=======
+=======
+const PasswordFindForm = () => {
+    return (
+      <>
+        <OuterDiv>
+
+          <h2>비밀번호 찾기 서비스입니다.</h2>
+
+          <form action="#">
+            <div>
+        
+            <label htmlFor="username">이름</label>
+              <Input type="text" id="username" placeholder="실명을 입력해 주세요." />
+            </div>
+            <div>
+              <label htmlFor="loginEmail">이메일</label>
+              <Input type="email" id="loginEmail" placeholder="이메일" />
+              
+            </div>
+  
+            <Button>인증 메일 보내기</Button>
+          </form>
+  
+        </OuterDiv>
+  
+      </>
+  
+    )
+  }
+  
+  export default PasswordFindForm;
+>>>>>>> b0e00f97f7c0f001e74ae9e861cc39bab843ef90
+>>>>>>> 743e2362dddce835be884131396d442c80cd885e
