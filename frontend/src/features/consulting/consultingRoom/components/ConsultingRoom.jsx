@@ -175,20 +175,21 @@ const ConsultingRoom = () => {
   const deleteSubscriber = (streamManager) => {
   }
 
-  const joinSession = () => {
+  const joinSession = () => {  //세션 값 넣기.
     const getOV = new OpenVidu();
     dispatch(setSession(getOV.initSession()))
     setOV(getOV)
   }
 
-  const streamCreated = (event) => {
+  const streamCreated = (event) => { 
     const subscriber = session.subscribe(event.stream, undefined);
     const subRole = JSON.parse(event.stream.connection.data).clientRole
     if (role === CONSULTANT && subRole === CUSTOMER) { dispatch(setCustomer(subscriber)) }
     else if (role === CUSTOMER && subRole === CONSULTANT) { setConsultant(subscriber) }
+
   }
 
-  const streamDestroyed = (event) => {
+  const streamDestroyed = (event) => { 
     deleteSubscriber(event.stream.streamManager);
   }
 
@@ -198,6 +199,7 @@ const ConsultingRoom = () => {
 
   // 컨설턴트, 고객 종료시 분리 필요
   const leaveSession = () => {
+    
     if (role === CONSULTANT) {
       if (worstColor.length < 1 | bestColor.length < 1) {
         alert('베스트컬러와 워스트컬러 팔레트를 1개 이상씩 채워주세요.')
