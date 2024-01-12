@@ -12,10 +12,6 @@ export const ButtonBox = styled.button`
   color: white;
   font-size: medium;
   font-weight: bold;
-  &:hover {
-    opacity: 0.7;
-    cursor: pointer;
-  }
 `;
 
 const Button = (props) => {
