@@ -24,7 +24,7 @@ export const getConsultantSessionName = createAsyncThunk(
   async (reservationId, { rejectWithValue }) => {
     try {
       const response = await Axios.post(`consultings/join`, { reservationId: reservationId })      
-      return response.data
+      return response.data // session id 를 리턴한다.
     } catch (err) {
       console.log(err)
       return err
@@ -93,11 +93,13 @@ export const consultSlice = createSlice({
       state.messageList.push(payload)
     }
   },
+  
   extraReducers: {
     [getConsultantSessionName.fulfilled]: (state, { payload }) => {
       state.consultantSessionName = payload.sessionId
     },
   }
+
 })
 
 export const { settingModalOn, settingModalOff, setSession, setCustomer,

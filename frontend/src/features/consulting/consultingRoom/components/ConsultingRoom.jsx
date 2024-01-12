@@ -95,16 +95,16 @@ const ConsultingRoom = () => {
   }, [consultantSessionName])
 
 
-  useEffect(() => {
+  useEffect( () => {
     alert('session'+session)
-    if (session) {
+
+    if(session) {
       session.on('streamCreated', streamCreated)
       session.on('streamDestroyed', streamDestroyed)
       session.on('exception', exception)
       session.on('signal:colorset', shareColorset)
       getToken().then(sessionConnect);
     }
-
   }, [session])
 
   const sessionConnect = (token) => {
@@ -224,6 +224,7 @@ const ConsultingRoom = () => {
     if (role === CUSTOMER && session) {
       session.disconnect();
     }
+
     setOV(null);
     setMySessionId(role === CONSULTANT ? tmp : consultantSessionName)
     dispatch(setSession(undefined))
@@ -255,7 +256,10 @@ const ConsultingRoom = () => {
       axios
         .post(OPENVIDU_SERVER_URL + '/openvidu/api/sessions', data, {
           headers: {
-            Authorization: 'Basic ' + btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
+            Authorization: 'Basic ' + 
+            // btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
+            Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET,POST',
