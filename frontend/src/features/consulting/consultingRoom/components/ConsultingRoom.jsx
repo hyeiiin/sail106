@@ -96,7 +96,8 @@ const ConsultingRoom = () => {
 
 
   useEffect( () => {
-    alert('session'+session)
+    alert('session'+session.consultantSessionName)
+    alert('all'+ session, customer, reservationId, consultantSessionName)
 
     if(session) {
       session.on('streamCreated', streamCreated)
