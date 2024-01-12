@@ -25,8 +25,9 @@ import ColorPalette from 'common/colorset/ColorPalette'
 import SelectedColorSet from 'common/colorset/SelectedColorSet';
 import ConSelectedColorSet from 'common/colorset/ConSelectedColorSet';
 import ColorButtonGroup from 'common/colorset/ColorButtonGroup'
+import { Buffer } from 'buffer';
 
-const OPENVIDU_SERVER_URL = 'https://localhost:4443';
+const OPENVIDU_SERVER_URL = 'http://localhost:4443';
 const OPENVIDU_SERVER_SECRET = 'OPENVIDU_SECRET';
 
 // rafce Arrow function style 
@@ -96,19 +97,19 @@ const ConsultingRoom = () => {
 
 
   useEffect( () => {
-    alert('session'+session.consultantSessionName)
-    alert('all'+ session, customer, reservationId, consultantSessionName)
-
-    if(session) {
+    alert('before ifsession' )
+ 
+    if(session) { //session 은 state.consult 에서 가져온값 
       session.on('streamCreated', streamCreated)
       session.on('streamDestroyed', streamDestroyed)
       session.on('exception', exception)
       session.on('signal:colorset', shareColorset)
-      getToken().then(sessionConnect);
+      getToken().then(sessionConnect); //gettoken수행시 createsession,createtoken 수행.
+
     }
   }, [session])
 
-  const sessionConnect = (token) => {
+  const sessionConnect = (token) => { // setsession ,setcustomer 등을 수행.
     session
       .connect(
         token, { clientData: myUserName, clientRole: role },

@@ -19,6 +19,7 @@ import SelfColorPalette from 'common/colorset/selfcolorset/SelfColorPalette'
 import SelectedColorSet from 'common/colorset/SelectedColorSet';
 import ColorButtonGroup from 'common/colorset/ColorButtonGroup'
 import { resetColor } from 'common/colorset/colorSetSlice';
+import { Buffer } from 'buffer';
 
 const OPENVIDU_SERVER_URL = 'http://localhost:4443';
 const OPENVIDU_SERVER_SECRET = 'OPENVIDU_SECRET';
