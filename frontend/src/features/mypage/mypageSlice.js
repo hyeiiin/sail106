@@ -61,7 +61,7 @@ export const selfDxFetch = createAsyncThunk(
 export const myResFetch = createAsyncThunk(
   'mypage/myResFetch',
   async () => {
-    return Axios.get('customers/1')
+    return Axios.get('customers/1') //내 예약조회
       .then(res => {
         if (res.status === OK) {
           return res.data

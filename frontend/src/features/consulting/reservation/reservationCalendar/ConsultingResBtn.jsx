@@ -26,6 +26,9 @@ const ConsultingResBtn = (props) => {
     {
       isReserved: null,
       time: '11:00:00'
+    },{
+      isReserved: null,
+      time: '12:00:00'
     },
     {
       isReserved: null,
@@ -57,7 +60,7 @@ const ConsultingResBtn = (props) => {
     setPickedTime(e.target.value)
   }
 
-  const reservationHandler = () => {
+  const reservationHandler = () => {  //예약 로직
     if (role === 'CUSTOMER') {
       const reservation = {
         reservationDate: props.pickedDate,

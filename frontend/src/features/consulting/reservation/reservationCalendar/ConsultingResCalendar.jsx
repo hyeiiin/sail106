@@ -27,6 +27,7 @@ const ConsultingResCalendar = () => {
     '09:00:00',
     '10:00:00',
     '11:00:00',
+    '12:00:00',
     '13:00:00',
     '14:00:00',
     '15:00:00',
@@ -47,10 +48,10 @@ const ConsultingResCalendar = () => {
     let resTimeTable = []
     const newdate = ((date.getFullYear()) + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2))
     // 날짜가 일치할때 시간 정보만 빈 리스트에 저장
-    if (newdate === todaydate) {
-      return <StyledDiv>당일예약불가</StyledDiv>
-    }
-    if (newdate > todaydate) {
+    // if (newdate === todaydate) {
+    //   return <StyledDiv>당일예약불가</StyledDiv>
+    // }
+    // if (newdate > todaydate) {
       reservations.forEach(res => {
         if (res.reservationDate === newdate) {
           resTimeTable.push(res.reservationTime)
@@ -66,7 +67,7 @@ const ConsultingResCalendar = () => {
         const noResTimeTable = timeTable.filter(x => !resTimeTable.includes(x))
         return <TimeTable timetable={noResTimeTable} />
       };
-    }
+    // }
     resTimeTable = []
   }
 
@@ -80,19 +81,21 @@ const ConsultingResCalendar = () => {
 
   let resContent = ''
 
-  if (pickedDate === todaydate) {
-    resContent = <Typography
-      component="h1"
-      variant="h5"
-      id="login-text">
-      당일은 예약이 불가능합니다.
-    </Typography>
-  } else if (pickedDate !== todaydate) {
+  // if (pickedDate === todaydate) {
+  //   resContent = <Typography
+  //     component="h1"
+  //     variant="h5"
+  //     id="login-text">
+  //     당일은 예약이 불가능합니다.
+  //   </Typography>
+  // }
+  
+  // else if (pickedDate !== todaydate) {
     resContent = <ConsultingResBtn
       pickedDate={pickedDate}
       reservations={filteredReservations}
     />
-  }
+  // }
 
 
   return (
