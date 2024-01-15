@@ -35,6 +35,7 @@ const ConsultingRoom = () => {
   const { nickname, email, role } = useSelector(state => state.auth.logonUser)
   const { session, customer, reservationId, consultantSessionName } = useSelector(state => state.consult)
   const tmp = email?.replace(/[@\.]/g, '-')
+
   const [mySessionId, setMySessionId] = useState(
     role === CONSULTANT ? tmp : consultantSessionName
   )
@@ -71,7 +72,7 @@ const ConsultingRoom = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // alert('dsfsfsfsd')
+    // console.log('dsfsfsfsd')
     window.addEventListener(
       'beforeunload',
       onbeforeunload);
@@ -85,9 +86,12 @@ const ConsultingRoom = () => {
 
   useEffect(() => {
     if (role === CUSTOMER) {
-      alert('consultantSessionName'+consultantSessionName)
+      // console.log('consultantSessionName'+consultantSessionName)
+      console.log('consultantSessionName'+consultantSessionName)
+
       if (!consultantSessionName) {
-        alert('요청된 세션이 없거나 공란입니다. 종료 후 정상접근 바랍니다.')
+        console.log('요청된 세션이 없거나 공란입니다. 종료 후 정상접근 바랍니다.')
+        console.log('요청된 세션이 없거나 공란입니다. 종료 후 정상접근 바랍니다.')
       }
       else {
         console.log(consultantSessionName)
@@ -95,26 +99,40 @@ const ConsultingRoom = () => {
     }
   }, [consultantSessionName])
 
+//방에 입장하고 싶은사람이 redux 에서 consultantsessioname 이 있으면 값출력, 없으면 종료한다.
+
+// consultantsessionname 이 바뀔때 실행된다.
 
   useEffect( () => {
-    alert('before ifsession' )
- 
+  
     if(session) { //session 은 state.consult 에서 가져온값 
-      session.on('streamCreated', streamCreated)
+      // console.log('in ifsessionn' )
+      console.log('in if session')
+
+      session.on('streamCreated', streamCreated) //session.on 은 useeffect 가 마운트될때, session 값 이 변경될때
+      // 실행된다
       session.on('streamDestroyed', streamDestroyed)
       session.on('exception', exception)
       session.on('signal:colorset', shareColorset)
       getToken().then(sessionConnect); //gettoken수행시 createsession,createtoken 수행.
-
     }
   }, [session])
+//session이 이미 존재하는 경우
+// getToken 함수가 호출되면 실제로는 새로운 세션을 만들지 않습니다.
+// createSession 함수 내에서 이미 생성된 세션이 있을 경우, 
 
+// 해당 세션의 ID를 반환하게 됩니다. 그러므로 getToken 함수는 이미 존재하는
+// 세션의 ID를 사용하여 토큰을 생성합니다.
   const sessionConnect = (token) => { // setsession ,setcustomer 등을 수행.
+    // console.log('connnnect')
+    console.log('connnnect')
     session
       .connect(
         token, { clientData: myUserName, clientRole: role },
       )
       .then(() => {
+        console.log('connect then')
+
         let publisher = OV.initPublisher(undefined, {
           audioSource: undefined,
           videoSource: undefined,
@@ -124,15 +142,19 @@ const ConsultingRoom = () => {
           frameRate: 30,
           insertMode: 'APPEND',
           mirror: false,
-        });
-        publisher.subscribeToRemote()
-        session.publish(publisher);
+        }); //publisher 에 비디오 정보를 저장 
+
+        publisher.subscribeToRemote() 
+        session.publish(publisher); //session.publish를 호출하여 로컬 사용자의 미디어 스트림을 서버에 전송
         setPublisher(publisher);
         if (role === CUSTOMER) { dispatch(setCustomer(publisher)) }
         if (role === CONSULTANT) { setConsultant(publisher) }
         dispatch(setSession(session))
       })
-      .catch((error) => { });
+      .catch((error) => {
+        console.log('connect error')
+       });
+
   }
 
   useEffect(() => {
@@ -157,7 +179,7 @@ const ConsultingRoom = () => {
     dispatch(sharedColorSet({ newSelectedColor, newBestColor, newWorstColor }))
   }
 
-  // 하단 alert관련
+  // 하단 console.log관련
   const clickColorFirstFunc = () => {
     if (clickColorFirst === false) {
       setClickColorFirst(true)
@@ -181,15 +203,19 @@ const ConsultingRoom = () => {
     setOV(getOV)
   }
 
-  const streamCreated = (event) => { 
-    const subscriber = session.subscribe(event.stream, undefined);
+  const streamCreated = (event) => {  //subscriber 는 
+    const subscriber = session.subscribe(event.stream,  undefined); //새로운 스트림 구독.
+    //event.stream 은 생성된 스트림.
     const subRole = JSON.parse(event.stream.connection.data).clientRole
+    //트림의 연결(connection) 객체에서 clientRole 값을 추출 
+    // 이 정보는 해당 스트림을 생성한 사용자의 역할 
+
     if (role === CONSULTANT && subRole === CUSTOMER) { dispatch(setCustomer(subscriber)) }
     else if (role === CUSTOMER && subRole === CONSULTANT) { setConsultant(subscriber) }
 
   }
 
-  const streamDestroyed = (event) => { 
+  const streamDestroyed = (event) => {
     deleteSubscriber(event.stream.streamManager);
   }
 
@@ -202,15 +228,15 @@ const ConsultingRoom = () => {
     
     if (role === CONSULTANT) {
       if (worstColor.length < 1 | bestColor.length < 1) {
-        alert('베스트컬러와 워스트컬러 팔레트를 1개 이상씩 채워주세요.')
+        console.log('베스트컬러와 워스트컬러 팔레트를 1개 이상씩 채워주세요.')
         return;
       }
       if (tone === '') {
-        alert('톤 정보를 입력해주세요.')
+        console.log('톤 정보를 입력해주세요.')
         return;
       }
       if (files === '') {
-        alert('진단 결과표를 등록해 주세요.')
+        console.log('진단 결과표를 등록해 주세요.')
         return;
       }
       if (session) {
@@ -252,30 +278,42 @@ const ConsultingRoom = () => {
 
   const getToken = () => {
     return createSession(mySessionId).then((sessionId) => createToken(sessionId));
+
   }
 
   const createSession = (sessionId) => {
     return new Promise((resolve, reject) => {
       const data = JSON.stringify({ customSessionId: sessionId });
-      axios
-        .post(OPENVIDU_SERVER_URL + '/openvidu/api/sessions', data, {
+      console.log('createsessionnn with sessionid'+sessionId)
+      console.log('buffffer'+ Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'))
+
+      axios.post( OPENVIDU_SERVER_URL + '/openvidu/api/sessions', data, {
+
           headers: {
             Authorization: 'Basic ' + 
             // btoa('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
-            Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+            // Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+            'T1BFTlZJRFVBUFA6T1BFTlZJRFVfU0VDUkVU',
 
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET,POST',
+            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
           },
         })
 
         .then((response) => {
-          resolve(response.data.id);
+          console.log('createsession then')
+          resolve(response.data.id); // 방 만든사람 아이디.
         })
+
         .catch((response) => {
+          // console.log('createsession catchhh')
+          console.log('createsession catchhh')
+
           var error = Object.assign({}, response);
-          if (error?.response?.status === 409) {
+          if (error?.response?.status === 409) {  
+            console.log('4099999999999999')
             resolve(sessionId);
           } else {
             console.warn(
@@ -300,6 +338,7 @@ const ConsultingRoom = () => {
   }
 
   const createToken = (sessionId) => {
+    console.log('tokennnnnn')
     return new Promise((resolve, reject) => {
       const data = {
         "type": "WEBRTC",
@@ -316,15 +355,22 @@ const ConsultingRoom = () => {
           ]
         }
       };
+
+      console.log('createtokkkkk'+    Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'))
+      console.log('buffer'+Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'))
       axios
         .post(OPENVIDU_SERVER_URL + "/openvidu/api/sessions/" + sessionId + "/connection", data, {
           headers: {
-            Authorization: 'Basic ' + btoa(
-              'OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET
-            ),
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET,POST',
+            Authorization: 'Basic ' +
+            //  btoa(
+            //   'OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET
+            // ),
+            //  Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+             'T1BFTlZJRFVBUFA6T1BFTlZJRFVfU0VDUkVU',
+
+            'Content-Type': 'application/json'
+            // 'Access-Control-Allow-Origin': '*',
+            // 'Access-Control-Allow-Methods': 'GET,POST',
           },
         })
         .then((response) => {
@@ -337,11 +383,14 @@ const ConsultingRoom = () => {
   // ---------- render
   return (
     <SContainer container >
-
+ 
       {session !== undefined ? (
         // 세션 연결시
+        
         <SGridContainer container spacing={2}>
-          {consultant !== undefined ? (
+          {
+
+          consultant !== undefined ? ( 
             <Grid container item xs={12} sm={2}
               sx={{
                 height: "80%",
@@ -457,7 +506,7 @@ const ConsultingRoom = () => {
             // 세션 연결시 
             <>
               {/* 베스트,워스트 컬러셋 || 마이크,캠,종료버튼 */}
-              {role === CONSULTANT ?
+              { role === CONSULTANT ?
                 // 컨설턴트
                 <>
                   {/* 컬러셋 */}

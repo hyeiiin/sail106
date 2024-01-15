@@ -7,6 +7,8 @@ import { CUSTOMER, CONSULTANT } from 'api/CustomConst'
 import CoverFilter from './CoverFilter'
 
 const UserVideoComponent = ({ streamManager }) => {
+  
+  alert('streammm'+streamManager)
 
   const subRole = JSON.parse(streamManager.stream.connection.data).clientRole;
 

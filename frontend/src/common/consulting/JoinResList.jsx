@@ -91,6 +91,7 @@ const JoinResList = () => {
           {reservationsList()}
         </Stack>
       }
+      
       {role === CUSTOMER
         && myResData.length > 0
         &&
@@ -98,6 +99,7 @@ const JoinResList = () => {
           {myResDataList()}
         </Stack>
       }
+
       {reservations.length === 0
         && myResData.length === 0
         &&

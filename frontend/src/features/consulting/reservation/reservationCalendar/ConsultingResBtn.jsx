@@ -26,9 +26,6 @@ const ConsultingResBtn = (props) => {
     {
       isReserved: null,
       time: '11:00:00'
-    },{
-      isReserved: null,
-      time: '12:00:00'
     },
     {
       isReserved: null,
@@ -60,7 +57,7 @@ const ConsultingResBtn = (props) => {
     setPickedTime(e.target.value)
   }
 
-  const reservationHandler = () => {  //예약 로직
+  const reservationHandler = () => {
     if (role === 'CUSTOMER') {
       const reservation = {
         reservationDate: props.pickedDate,
@@ -80,7 +77,7 @@ const ConsultingResBtn = (props) => {
         setRequest('')
         setValue('')
       }
-      setPickedTime('')
+      setPickedTime('') 
     } else if (role === "CONSULTANT") {
       alert('컨설턴트는 컨설팅 예약을 할 수 없습니다!')
     } else {

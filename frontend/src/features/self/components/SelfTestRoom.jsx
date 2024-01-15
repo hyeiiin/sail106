@@ -190,7 +190,8 @@ const SelfTestRoom = () => {
           headers: {
             Authorization: 'Basic ' +  
             // Window.atob ('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET),
-            Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+            // Buffer.from('OPENVIDUAPP:' + OPENVIDU_SERVER_SECRET).toString('base64'),
+            'T1BFTlZJRFVBUFA6T1BFTlZJRFVfU0VDUkVU',
 
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',

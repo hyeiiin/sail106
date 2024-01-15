@@ -13,6 +13,7 @@ const Chat = () => {
   const dispatch = useDispatch()
 
   const handleMessage = () => {
+    
     if (session && msg.length > 0) {
       const mine = {
         id: messageId,
@@ -39,16 +40,21 @@ const Chat = () => {
       })
       setMsg('')
     }
+
+    
   }
 
   useEffect(() => {
+    
     if (session) {
       session.on('signal:chat', textChat)
     }
+    alert("in chat")
   }, [session])
 
   const textChat = (event) => {
     const data = JSON.parse(event.data)
+
     if (data.role !== role) {
       dispatch(appendMessageList(data))
     }
